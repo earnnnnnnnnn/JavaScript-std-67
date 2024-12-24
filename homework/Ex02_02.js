@@ -1,4 +1,4 @@
-function calculateEquation(equation) {
+function equation(equation) {
     const operators = [];
     const numbers = [];
     let currentNumber = "";
@@ -50,7 +50,7 @@ function calculateEquation(equation) {
   }
   
   // ตัวอย่างการใช้งาน
-  console.log(calculateEquation("1+1"));       // Output: 2
-  console.log(calculateEquation("7*4-2"));     // Output: 26
-  console.log(calculateEquation("1+1+1+1+1")); // Output: 5
+  console.log(equation("1+1"));       // Output: 2
+  console.log(equation("7*4-2"));     // Output: 26
+  console.log(equation("1+1+1+1+1")); // Output: 5
   
