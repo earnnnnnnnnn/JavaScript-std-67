@@ -1,15 +1,13 @@
-let valuse1 = ['Apple',1,false];
-let valuse2 = ['Fries',2,true];
-let valuse3 = ['Mars',9,'Apple'];
+let values1 = ['Apple', 1, false];
+let values2 = ['Fries', 2, true];
+let values3 = ['Mars', 9, 'Apple'];
 
-// function reducer (){
-//     const result =  valuse1 == valuse2 && valuse3;
-
-//     console.log(result);
-// }
-// reducer();
-
-
-for (let array1 of valuse1 && valuse2 && valuse3){
-    console.log(array1);
+// สร้างฟังก์ชันเพื่อหา Common Elements
+function findCommonElements(arr1, arr2, arr3) {
+  // กรองเฉพาะค่าที่มีอยู่ในทุก Array
+  return arr1.filter(item => arr2.includes(item) && arr3.includes(item));
 }
+
+// เรียกใช้ฟังก์ชัน
+let commonElements = findCommonElements(values1, values2, values3);
+console.log("Common Elements:", commonElements);
