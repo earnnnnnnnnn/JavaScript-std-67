@@ -31,6 +31,7 @@ console.log("\n********Try..Catch..Finally********\n");
 
 try{
     criticalCode();
+    // console.log("Hello world")
 } catch (ex) {
     console.log("Got an error");
     logError(ex);

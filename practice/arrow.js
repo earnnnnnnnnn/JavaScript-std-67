@@ -1,5 +1,5 @@
 //Arrow Function
-const add = (a,b) => a+b;
+const add = (a,b) => a+b;//แอโล่ฟังก์ชัน
 
 //Arrow Function Without parameters
 const greet = () => "Hello world";
