@@ -5,6 +5,18 @@
     "main": "index.js",
 
     "scripts": {
-        
+        "format":"prettier --write *.js",
+        "start": "node sre/index.js",
+        "dev": "nodemon src/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Anirach/NodeREST.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Anirach/NodeREST/issues"
     }
 }

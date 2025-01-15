@@ -1,5 +1,5 @@
 const promise = new Promise ((resolve, reject) => {
-    const res = true;
+    const res = false;
     // An asynchronous operation.
     if (res) {
         resolve("Resolved!");

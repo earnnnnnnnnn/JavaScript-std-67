@@ -12,7 +12,7 @@ function cube(x) {
     return x*x*x;
 }
 
-const add = (a,b) => a+b;
+const add = (a,b) => a+b; //แอโล่ฟังก์ชัน
 
 const status = true;
 

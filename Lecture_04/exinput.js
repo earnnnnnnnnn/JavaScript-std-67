@@ -20,5 +20,4 @@ rl.question('Enter your name: ',(name) => {
             rl.close();
         });
     });
-})
-;
+});
