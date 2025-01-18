@@ -1,7 +1,14 @@
+// กำหนดตัวแปร status มีค่าเป็น 'error'
 const status = 'error';
 
-if (statuss.toUpperCase() === 'ERROR'){
-    console.log('Something went wronga!');
-}else{
-    console.log('Looks great!!');
+// ตรวจสอบเงื่อนไขด้วย if-else
+// ใช้เมธอด toUpperCase() เพื่อแปลงข้อความในตัวแปร statuss (แต่ในโค้ดนี้ตัวแปรเขียนผิด)
+// ให้เป็นตัวพิมพ์ใหญ่ทั้งหมด แล้วเปรียบเทียบกับข้อความ 'ERROR'
+if (status.toUpperCase() === 'ERROR') { // **ข้อผิดพลาด**: ตัวแปร statuss ไม่มีการประกาศ ทำให้เกิดข้อผิดพลาด
+    console.log('Something went wronga!'); // แสดงข้อความถ้าตรงกับเงื่อนไข 'ERROR'
+} else {
+    console.log('Looks great!!'); // แสดงข้อความถ้าไม่ตรงกับเงื่อนไข
 }
+
+// **หมายเหตุ**: ในโค้ดนี้ตัวแปร "statuss" เขียนผิดจาก "status"
+// ควรแก้ไขเป็น "status" เพื่อหลีกเลี่ยงข้อผิดพลาด

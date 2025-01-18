@@ -1,7 +1,11 @@
-console.log(Math.floor(5.05));
+// ใช้ Math.floor() เพื่อลดทศนิยมของตัวเลข 5.05 ไปยังค่าต่ำสุดที่ใกล้ที่สุด (ตัดทศนิยมออก)
+console.log(Math.floor(5.05)); // แสดงผล: 5
 
-console.log(Math.ceil(7.004));
+// ใช้ Math.ceil() เพื่อปัดตัวเลข 7.004 ขึ้นไปยังค่าที่มากที่สุดที่ใกล้เคียง
+console.log(Math.ceil(7.004)); // แสดงผล: 8
 
-console.log(Math.random());
+// ใช้ Math.random() เพื่อสร้างเลขสุ่มระหว่าง 0 (รวม) และ 1 (ไม่รวม)
+console.log(Math.random()); // แสดงผล: เลขสุ่มระหว่าง 0 และ 1
 
-console.log(Math.min(-2, -3, -1));
+// ใช้ Math.min() เพื่อหาค่าต่ำสุดจากชุดค่าที่ระบุ (-2, -3, -1)
+console.log(Math.min(-2, -3, -1)); // แสดงผล: -3

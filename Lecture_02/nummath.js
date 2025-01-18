@@ -1,19 +1,20 @@
+// กำหนดตัวแปร num1 เป็น 100
 let num1 = 100;
 
-//Basic Math
 console.log("********Basic Math*********");
-console.log(num1 + 25);
-console.log(num1 - 100);
-console.log(num1 * 100);
-console.log(num1 / 1500);
+// การคำนวณทางคณิตศาสตร์พื้นฐาน
+console.log(num1 + 25); // บวก 100 + 25 แสดงผล: 125
+console.log(num1 - 100); // ลบ 100 - 100 แสดงผล: 0
+console.log(num1 * 100); // คูณ 100 * 100 แสดงผล: 10000
+console.log(num1 / 1500); // หาร 100 / 1500 แสดงผล: 0.06666666666666667
 
 console.log("**********Addional Mathematical Operations*********");
-//Additional Mathematical Operations
-console.log(num1 % 1500); // Remainder
-console.log(++num1); //Increment
-console.log(--num1); //Decrement
+// การคำนวณทางคณิตศาสตร์เพิ่มเติม
+console.log(num1 % 1500); // หาเศษจากการหาร 100 % 1500 แสดงผล: 100 (เนื่องจาก 100 น้อยกว่า 1500)
+console.log(++num1); // เพิ่มค่า num1 ก่อนการใช้งาน (เพิ่มค่า num1 จาก 100 เป็น 101 แล้วแสดงผล) แสดงผล: 101
+console.log(--num1); // ลดค่า num1 ก่อนการใช้งาน (ลดค่า num1 จาก 101 เป็น 100 แล้วแสดงผล) แสดงผล: 100
 
 console.log("**********Using the Math Object*********");
-//Using the Math Object
-console.log(Math.PI); //Pi
-console.log(Math.sqrt(num1)); //Square root
+// การใช้งานออบเจ็กต์ Math
+console.log(Math.PI); // แสดงค่าของ Pi (ประมาณ 3.14159)
+console.log(Math.sqrt(num1)); // คำนวณหาค่ารากที่สองของ num1 (รากที่สองของ 100 คือ 10)
