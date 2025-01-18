@@ -5,4 +5,5 @@ const subtract = (a, b) =>{
     const result = a - b;
     return result;
 };
+
 console.log(subtract(4,2));

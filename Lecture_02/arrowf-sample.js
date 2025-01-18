@@ -2,12 +2,14 @@
 const sum = (firstParam, secondParam) => {
     return firstParam + secondParam;
 };
+
 console.log(sum(2, 5)); // Prints: 7
 
 // Arrow function with no arguments
 const printHello = () => {
     console.log("hello");
 };
+
 printHello(); // Prints: hello
 
 // Arrow functions with a single argument
