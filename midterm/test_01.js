@@ -1,7 +1,7 @@
 function numberSplit(num) {
     num /= 2;
-    console.log(num);
-    
+    let result = (`[ ${Math.floor(num)} , ${Math.ceil(num)} ]`);
+    return result;
 }
 
 console.log(numberSplit(4));

@@ -1,0 +1,142 @@
+String
+// .concat() ใช้สำหรับเชื่อม String หลายตัวเข้าด้วยกัน
+const str1 = "Hello";
+const str2 = "World";
+console.log(str1.concat(" ", str2)); // "Hello World"
+
+// .charAt() ใช้สำหรับดึงตัวอักษรจากตำแหน่งที่กำหนด
+const str = "Hello";
+console.log(str.charAt(1)); // "e"
+
+// .indexOf() ใช้ค้นหาตำแหน่งของข้อความภายใน String
+const str = "Hello World";
+console.log(str.indexOf("World")); // 6
+
+// .startsWith() ใช้ตรวจสอบว่า String เริ่มต้นด้วยข้อความที่กำหนดหรือไม่
+const str = "Hello World";
+console.log(str.startsWith("Hello")); // true
+
+// .endsWith() ใช้ตรวจสอบว่า String ลงท้ายด้วยข้อความที่กำหนดหรือไม่
+const str = "Hello World";
+console.log(str.endsWith("World")); // true
+
+// .split() ใช้แบ่ง String ออกเป็น Array ตามตัวคั่นที่กำหนด
+const str = "a,b,c";
+console.log(str.split(",")); // ["a", "b", "c"]
+
+// .slice() ใช้ดึงข้อความจากตำแหน่งเริ่มต้นถึงตำแหน่งสิ้นสุด (ไม่รวมสิ้นสุด)
+const str = "Hello World";
+console.log(str.slice(0, 5)); // "Hello"
+
+
+
+Number
+// .toFixed() ใช้ปรับจำนวนทศนิยมให้เป็นค่าที่กำหนด
+const num = 3.14159;
+console.log(num.toFixed(2)); // "3.14"
+
+// .toPrecision() ใช้ปรับจำนวนตัวเลขทั้งหมด 
+// (ทั้งก่อนและหลังจุดทศนิยม) ตามจำนวนที่กำหนด
+const num = 3.14159;
+console.log(num.toPrecision(3)); // "3.14"
+console.log(num.toPrecision(2)); // "3.1"
+
+// .toString() ใช้แปลงตัวเลขให้เป็น String
+const num = 123;
+console.log(num.toString()); // "123"
+
+
+
+Boolean
+// .toString() ใช้แปลงค่า Boolean (true หรือ false) ให้เป็น
+const bool = true;
+console.log(bool.toString()); // "true"
+
+
+ตั้งแต่ตรงนี้ยังไม่เอามา
+.reduce() เป็นเมธอดใน JavaScript ที่ใช้สำหรับการประมวลผลและรวบรวมค่าจากอาเรย์ (array) 
+โดยการทำงานของมันจะนำค่าทุกตัวในอาเรย์มาผสมกันเป็นค่าเดียว 
+(เช่น ผลรวม, ผลคูณ, หรือผลลัพธ์อื่นๆ)
+let numbers = [1, 2, 3, 4];
+let product = numbers.reduce((acc, currentValue) => acc * currentValue, 1);
+console.log(product); // ผลลัพธ์จะเป็น 24
+
+let numbers = [1, 2, 3, 4];
+let sum = numbers.reduce((acc, currentValue) => acc + currentValue, 0);
+console.log(sum); // ผลลัพธ์จะเป็น 10
+
+
+.forEach() ใช้สำหรับการวนลูปผ่านอาเรย์เพื่อทำการประมวลผลแต่ละองค์ประกอบในอาเรย์
+มันจะไม่คืนค่าผลลัพธ์ใดๆ ดังนั้นหากต้องการเก็บผลลัพธ์ควรใช้ตัวแปรภายนอก เช่น sum หรือ result เป็นต้น
+ไม่สามารถหยุดการวนลูปได้ (ต้องใช้ break หรือ return ในฟังก์ชันเพื่อออกจากลูปได้ในบางกรณี)
+
+let numbers = [10, 20, 30];
+numbers.forEach((num, index) => {
+  console.log(`ดัชนี ${index}: ค่า ${num}`);
+});
+// ผลลัพธ์:
+// ดัชนี 0: ค่า 10
+// ดัชนี 1: ค่า 20
+// ดัชนี 2: ค่า 30
+
+
+...arrays หรือ Rest Parameter เป็นฟีเจอร์ใน JavaScript 
+ที่ใช้ในการรับค่าพารามิเตอร์จำนวนหลายๆ ตัวในฟังก์ชัน 
+โดยไม่ต้องระบุจำนวนพารามิเตอร์ที่ชัดเจน 
+ใช้เพื่อรับอาร์กิวเมนต์ทั้งหมดในรูปแบบอาเรย์ (Array) 
+และสามารถนำมาใช้งานต่อได้
+
+function sumNumbers(...numbers) {
+  let total = 0;
+  numbers.forEach(num => total += num);
+  return total;
+}
+console.log(sumNumbers(1, 2, 3, 4));  // ผลลัพธ์จะเป็น 10
+
+function greet(greeting, ...names) {
+  names.forEach(name => {
+    console.log(greeting + ", " + name);
+  });
+}
+
+greet("Hello", "Alice", "Bob", "Charlie");
+// Output:
+// Hello, Alice
+// Hello, Bob
+// Hello, Charlie
+
+
+acc (Accumulator): ตัวสะสมค่าผลลัพธ์จากการทำงานในแต่ละรอบของ reduce(). 
+มันจะเก็บค่าผลลัพธ์ที่สะสมจากการคำนวณในแต่ละรอบของลูปในอาเรย์. 
+สำหรับการคำนวณที่ใช้การคูณ (acc * val), acc 
+จะเก็บผลลัพธ์การคูณที่เกิดขึ้นจากการวนลูป.
+
+val (Value): ค่าขององค์ประกอบปัจจุบันในอาเรย์ที่กำลังถูกประมวลผลในรอบนั้น. 
+โดย val จะถูกใช้ในการคำนวณกับ acc.
+
+ตัวอย่างการทำงานของ reduce():
+สมมติว่าเรามีอาเรย์ [2, 3, 4] และเราต้องการหาผลคูณของค่าทั้งหมดในอาเรย์นี้:
+let array = [2, 3, 4];
+let result = array.reduce((acc, val) => acc * val, 1);
+console.log(result); // ผลลัพธ์จะเป็น 24
+
+การทำงานของ reduce() คือ:
+รอบแรก:
+acc = 1 (เนื่องจากเราให้ค่าเริ่มต้นเป็น 1)
+val = 2 (ค่าตัวแรกในอาเรย์)
+คำนวณ 1 * 2 ซึ่งได้ผลลัพธ์เป็น 2
+
+รอบที่สอง:
+acc = 2 (จากรอบแรก)
+val = 3 (ค่าตัวที่สองในอาเรย์)
+คำนวณ 2 * 3 ซึ่งได้ผลลัพธ์เป็น 6
+
+รอบที่สาม:
+acc = 6 (จากรอบที่สอง)
+val = 4 (ค่าตัวที่สามในอาเรย์)
+คำนวณ 6 * 4 ซึ่งได้ผลลัพธ์เป็น 24
+
+สุดท้าย reduce() จะคืนค่า 24 เป็นผลลัพธ์.
+สรุป:
+acc คือค่าผลลัพธ์ที่สะสมในแต่ละรอบของ reduce().
+val คือค่าปัจจุบันที่กำลังประมวลผลจากอาเรย์.
