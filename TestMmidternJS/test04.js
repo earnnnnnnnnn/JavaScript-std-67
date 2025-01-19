@@ -1,22 +1,12 @@
-//EX
-//function sum(...args) {
-    //let sum = 0;
-    //for (let arg of args) sum += arg;
-    //return sum;
-//}
-
-//let x = sum(4, 9, 25, 29, 100, 66, 77);
-//console.log(sum)
-
+// ฟังก์ชัน totalVolume ใช้สำหรับคำนวณปริมาตรรวมของกล่องหลายๆ ใบ
 function totalVolume(...boxes) {
-    let total = 0;
-    for (let box of boxes) {
-        total += box[0] * box[1] * box[2]; 
+    let total = 0; // ตัวแปรสำหรับเก็บผลรวมปริมาตร
+    for (let box of boxes) { // วนลูปผ่านแต่ละกล่องใน boxes
+        total += box[0] * box[1] * box[2]; // คำนวณปริมาตรของกล่องแต่ละใบ (ความยาว * ความกว้าง * ความสูง)
     }
-    return total;
+    return total; // คืนค่าผลรวมของปริมาตรทั้งหมด
 }
 
-
-console.log(totalVolume([4, 2, 4], [3, 3, 3], [1, 1, 2], [2, 1, 1])); 
-console.log(totalVolume([2, 2, 2], [2, 1, 1])); 
-console.log(totalVolume([1, 1, 1])); 
+console.log(totalVolume([4, 2, 4], [3, 3, 3], [1, 1, 2], [2, 1, 1]));  // แสดงผลรวมปริมาตรของกล่อง 4 ใบ
+console.log(totalVolume([2, 2, 2], [2, 1, 1])); // แสดงผลรวมปริมาตรของกล่อง 2 ใบ
+console.log(totalVolume([1, 1, 1]));  // แสดงผลรวมปริมาตรของกล่อง 1 ใบ
