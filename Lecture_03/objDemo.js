@@ -1,26 +1,26 @@
 /* START */
 
-//How can you represent real-world objects in code?
-//They have associated attributes = object PROPERTIES
-//They have associated actions = object METHODS
-//They have associated context = "this"
+// วิธีการที่คุณสามารถแสดงวัตถุในโลกจริงในโค้ดได้อย่างไร?
+// พวกมันมีคุณลักษณะที่เกี่ยวข้อง = properties ของ object
+// พวกมันมีการกระทำที่เกี่ยวข้อง = methods ของ object
+// พวกมันมีบริบทที่เกี่ยวข้อง = "this"
 
 
-//First:
-//Let's define a simple object (with no properties or methods)
-const blank = {};
-console.log("Blank type:",typeof blank);
-console.log("Blank value",blank);
+// ขั้นแรก:
+// มาสร้าง object ที่เรียบง่าย (ไม่มี properties หรือ methods)
+const blank = {}; // สร้าง object ว่าง
+console.log("Blank type:", typeof blank); // แสดงประเภทของ object ว่าเป็น 'object'
+console.log("Blank value", blank); // แสดงค่า (หรือค่าว่าง) ของ object
 
 
 /*
-//Next:
-//Let's define an object with PROPERTIES (attributes)
-//Objects are just a collection of name-value pairs
-//separated by commas
-const book = {
-    title : "1984",
-    author: "George Orwell",
-    isAvailable: false
-};
+ // ขั้นถัดไป:
+ // มาสร้าง object ที่มี PROPERTIES (คุณลักษณะ)
+ // Object คือการรวบรวมคู่ชื่อ-ค่า (name-value pairs)
+ // แยกกันด้วยเครื่องหมายจุลภาค
+ const book = {
+     title: "1984", // ชื่อหนังสือ
+     author: "George Orwell", // ผู้เขียน
+     isAvailable: false // สถานะการมีอยู่ (มีหรือไม่มี)
+ };
 */

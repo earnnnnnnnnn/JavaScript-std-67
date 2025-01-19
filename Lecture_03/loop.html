@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <h2>JavaScript While Loop</h2>
+    <h2>JavaScript While Loop</h2> <!-- หัวข้อของหน้าเว็บแสดงว่าเป็นการใช้งาน while loop ใน JavaScript -->
 
-    <p id="demo"></p>
+    <p id="demo"></p> <!-- พื้นที่สำหรับแสดงผลลัพธ์จาก JavaScript -->
+
     <script>
-        var text = "";
-        var i = 0;
-        while (i < 15){
-            text += "<br>The number is " + i;
-            i++;
+        var text = ""; // ตัวแปรที่ใช้เก็บข้อความที่จะแสดงผล
+        var i = 0; // ตัวแปร i เริ่มต้นที่ 0
+
+        // ใช้ while loop เพื่อทำงานตราบใดที่เงื่อนไข i < 15 เป็นจริง
+        while (i < 15) {
+            text += "<br>The number is " + i; // เพิ่มข้อความพร้อมกับหมายเลข i ลงใน text
+            i++; // เพิ่มค่า i ทีละ 1 ในทุกๆ รอบของลูป
         }
+
+        // แสดงข้อความที่เก็บไว้ใน text ใน element ที่มี id เป็น "demo"
         document.getElementById("demo").innerHTML = text;
     </script>
 </body>

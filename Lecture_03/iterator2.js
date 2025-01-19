@@ -1,12 +1,13 @@
-let str = "Hello";
+let str = "Hello"; // กำหนด string ที่ต้องการวนลูป
 
-// does the same as
-// for (let char of str) conslo.log(char);
+// ทำงานเหมือนกับ
+// for (let char of str) console.log(char); // ใช้ for...of เพื่อวนลูปตัวอักษรใน string
 
+// สร้าง iterator สำหรับ string โดยใช้ Symbol.iterator
 let iterator = str[Symbol.iterator]();
 
 while (true) {
-    let result = iterator.next();
-    if (result.done) break;
-    console.log(result.value); // outputs characters one by one
+    let result = iterator.next(); // ดึงค่าถัดไปจาก iterator
+    if (result.done) break; // ตรวจสอบสถานะว่า done เป็น true หรือไม่ หากใช่ให้หยุดลูป
+    console.log(result.value); // แสดงตัวอักษรทีละตัวจาก string
 }

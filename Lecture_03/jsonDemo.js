@@ -1,5 +1,5 @@
 /*************************************************
- * JavaScrit for Beginners
+ * JavaScript for Beginners
  * JS101 - JSON DEMO
  * 
  * BASICS    : JSON Format
@@ -7,20 +7,18 @@
  * PARSE     : JSON to JavaScript
  *************************************************/
 
-
-//Think of a simple JavaScript with data (property values)
-const book = new Object({ title : "1984", author: "George Orwell"});
-console.log("\n--------")
-console.log(typeof book);
-console.log(book);
-
+// คิดถึง JavaScript ที่มีข้อมูล (ค่าของ property)
+const book = new Object({ title: "1984", author: "George Orwell" }); // สร้าง object book โดยใช้ new Object()
+console.log("\n--------");
+console.log(typeof book); // แสดงประเภทของ object (จะได้ผลลัพธ์เป็น 'object')
+console.log(book); // แสดงค่าของ object book
 
 /*
-// You can also have a collection of these objects
-const myBooks = [
-    new Object({ titlt : "1984", author: "George Orwell"}),
-    new Object({ titlt : "Becoming", author: "Michelle Obama"}),
-    new Object({ titlt : "Snow Crash", author: "Neal Stephenson"}),
-    new Object({ titlt : "Predictably Irration", author: "Dan Arily"}),
-];
+ // คุณสามารถมี collection ของ object เหล่านี้ได้
+ const myBooks = [
+     new Object({ title: "1984", author: "George Orwell" }), // สร้าง object ของแต่ละเล่ม
+     new Object({ title: "Becoming", author: "Michelle Obama" }),
+     new Object({ title: "Snow Crash", author: "Neal Stephenson" }),
+     new Object({ title: "Predictably Irrational", author: "Dan Ariely" }),
+ ];
 */

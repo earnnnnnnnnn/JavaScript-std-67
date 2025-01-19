@@ -2,7 +2,7 @@ let arr1 = ["A", true, 2]; // กำหนด array ที่มีค่า "A"
 
 console.log("\n********Length and index********\n"); // แสดงข้อความแยกส่วนสำหรับ Length และ index
 console.log(arr1.length); // แสดงความยาวของ array (จำนวนสมาชิกใน array)
-console.log(arr1[3]); // แสดงค่าที่ index 3 ซึ่งไม่ได้มีค่า (undefined)
+console.log(arr1[3]); // แสดงค่าที่ index 3 ซึ่งไม่ได้มีค่า (undefined) เพราะไม่มีสมาชิกที่ index นี้
 console.log(arr1[2]); // แสดงค่าที่ index 2 ซึ่งเป็นสมาชิกสุดท้ายของ array
 console.log(arr1[arr1.length - 1]); // แสดงค่าที่ index ของสมาชิกสุดท้ายโดยใช้ความยาวของ array ลบ 1
 
