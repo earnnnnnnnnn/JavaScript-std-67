@@ -8,18 +8,19 @@
 <body>
     <h2>JavaScript Array.forEach()</h2>
 
-    <p>Calls a function one for each array element.</p>
+    <p>Calls a function one for each array element.</p> <!-- คำอธิบายเกี่ยวกับ Array.forEach() -->
 
-    <p id = "demo" ></p>
+    <p id="demo"></p> <!-- ส่วนแสดงผลข้อความที่ได้จากการวนลูป -->
 
     <script>
-        var txt = "";
-        var numbers = [45,4,9,16,25];
-        numbers.forEach(myFunction);
-        document.getElementById('demo').innerHTML = txt;
+        var txt = ""; // ตัวแปรสำหรับเก็บข้อความที่จะแสดงผล
+        var numbers = [45, 4, 9, 16, 25]; // Array ตัวเลขที่ต้องการวนลูป
+        numbers.forEach(myFunction); // เรียกใช้เมธอด forEach() กับ array โดยส่งฟังก์ชัน myFunction เป็น callback
+        document.getElementById('demo').innerHTML = txt; // แสดงผลข้อความใน element ที่มี id เป็น "demo"
 
+        // ฟังก์ชันที่ใช้กับ forEach() สำหรับการดำเนินการกับแต่ละ element
         function myFunction(value) {
-            txt = txt + value + "<br>";
+            txt = txt + value + "<br>"; // เพิ่มค่า element ใน array และแทรกตัวแบ่งบรรทัดลงใน txt
         }
     </script>
 </body>

@@ -1,5 +1,5 @@
-// กำหนดค่า status เป็น 200
-const status = 200;
+// กำหนดค่า status เป็น 500
+const status = 500;
 
 // ใช้คำสั่ง switch เพื่อตรวจสอบค่าของ status
 switch (status){

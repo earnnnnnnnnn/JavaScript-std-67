@@ -1,5 +1,6 @@
 // 1. การกำหนดฟังก์ชัน (Function Definition)
-// ฟังก์ชัน printHello จะรับพารามิเตอร์ name และแสดงข้อความ "Hello" พร้อมกับค่าของ name
+// ฟังก์ชัน printHello จะรับพารามิเตอร์ name 
+// และแสดงข้อความ "Hello" พร้อมกับค่าของ name
 // จากนั้นจะคืนค่าข้อความที่รวม name กับ " hello!" กลับไป
 function printHello(name){
    console.log("Hello " + name);
