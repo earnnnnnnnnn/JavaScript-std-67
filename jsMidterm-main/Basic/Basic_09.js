@@ -1,5 +1,3 @@
-// Apiwat Ketsawong
-
 // ฟังก์ชัน digitalClock: รับค่าจำนวนนาที (ในรูปวินาที) และคืนค่าผลลัพธ์ในรูปแบบเวลาที่เป็น HH:MM:SS
 function digitalClock(sec) {
     // คำนวณชั่วโมง (h): 

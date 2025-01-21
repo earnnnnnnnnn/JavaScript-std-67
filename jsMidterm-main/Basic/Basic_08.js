@@ -1,5 +1,3 @@
-// Apiwat Ketsawong
-
 // ฟังก์ชัน simplePair: ค้นหาคู่ของตัวเลขในอาร์เรย์ที่คูณกันแล้วได้ค่าที่กำหนด (mul)
 function simplePair(arr, mul) {
     const result = []; // อาร์เรย์เก็บคู่ที่ตรงตามเงื่อนไข

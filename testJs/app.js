@@ -1,5 +1,7 @@
-document.write("<h1>กชกร เมืองโพธ์</h1>");
-document.write("<p>JavaScript</p>");
-
-// alert("แจ้งเตือน")
-console.log("Hello World");
+let name = "earn"
+let age = 20.1; // สร้างตัวแปรไม่มีการกำนดค่า
+console.log(name);
+document.write(name)
+console.log("age: ",age);
+console.log(parseInt(age));
+console.log(typeof(age));  
